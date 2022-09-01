@@ -29,6 +29,7 @@ public class ServletExController {
 
     @GetMapping("/error-500")
     public void error500(HttpServletResponse response) throws IOException{
+        log.info("servlet");
         response.sendError(500);
     }
 }
